@@ -48,6 +48,20 @@ await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => request
 // Give embedded iframes (e.g. maps) a moment to finish painting tiles.
 await new Promise((r) => setTimeout(r, 1500));
 
+// fullPage screenshots resize the viewport to the full document height right
+// before capturing, which triggers native loading="lazy" images — but doesn't
+// wait for them to actually finish loading. Force-load and wait so the
+// capture reflects the fully-loaded page, not a mid-fetch frame.
+await page.evaluate(async () => {
+  const imgs = Array.from(document.images);
+  imgs.forEach((img) => { img.loading = 'eager'; });
+  await Promise.all(
+    imgs.map((img) =>
+      img.complete ? Promise.resolve() : new Promise((res) => { img.onload = img.onerror = res; })
+    )
+  );
+});
+
 await page.screenshot({ path: outPath, fullPage: true });
 await browser.close();
 

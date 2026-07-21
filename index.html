@@ -5,51 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MeuVet | Dr. Luís Diego Almeida — Atendimento Veterinário Domiciliar</title>
 <meta name="description" content="Consultas, vacinas, exames e cuidado preventivo veterinário no conforto da sua casa. Dr. Luís Diego Lopes Almeida, mais de 5 mil famílias atendidas no Vale do São Francisco.">
-<link rel="icon" href="brand_assets/logo-icone.jpg">
+<link rel="icon" href="brand_assets/logo-icone-web.webp" type="image/webp">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          cream: '#FBF6EA',
-          paper: '#FFFDF8',
-          ink: '#1B241E',
-          muted: '#5D6B60',
-          brand: {
-            50:  '#EFFAF3',
-            100: '#DCF3E3',
-            200: '#B3E5C6',
-            300: '#86D6A8',
-            400: '#4FBE83',
-            500: '#249C61',
-            600: '#178050',
-            700: '#106242',
-            800: '#0C4A33',
-            900: '#082F22',
-            950: '#051D15',
-          },
-          clay: {
-            50:  '#FBEEE2',
-            100: '#F6DDC3',
-            400: '#E79A66',
-            500: '#DD7F45',
-            600: '#C0632F',
-          },
-        },
-        fontFamily: {
-          display: ['"Fraunces"', 'serif'],
-          body: ['"Plus Jakarta Sans"', 'sans-serif'],
-        },
-      },
-    },
-  };
-</script>
+<link rel="preload" as="image" href="atendimentos/DSC09616-web.webp" fetchpriority="high">
+<link rel="stylesheet" href="assets/tailwind.css">
 
 <style>
   html { scroll-behavior: smooth; }
@@ -233,7 +195,7 @@
   <div class="max-w-7xl mx-auto px-5 md:px-8 h-[72px] flex items-center justify-between">
     <a href="#topo" class="flex items-center gap-3 group">
       <span class="navlogo-crop ring-2 ring-brand-100">
-        <img src="brand_assets/logo-icone.jpg" alt="Ícone MeuVet">
+        <img src="brand_assets/logo-icone-web.webp" alt="Ícone MeuVet" width="256" height="256">
       </span>
       <span class="font-display font-bold text-xl md:text-2xl text-brand-900 tracking-tight">Meu<span class="text-brand-500">Vet</span></span>
     </a>
@@ -333,7 +295,7 @@
     <div class="reveal-scale in-view relative">
       <div aria-hidden="true" class="absolute -top-6 -left-6 w-full h-full rounded-[2.5rem] bg-brand-600/90 -z-10"></div>
       <div class="relative rounded-[2.5rem] overflow-hidden shadow-soft-lg aspect-[4/5]">
-        <img src="atendimentos/DSC09616.jpg" alt="Dr. Luís Diego Almeida atendendo um pet em domicílio" class="w-full h-full object-cover object-top">
+        <img src="atendimentos/DSC09616-web.webp" alt="Dr. Luís Diego Almeida atendendo um pet em domicílio" class="w-full h-full object-cover object-top" width="1200" height="1800" fetchpriority="high">
         <div class="absolute inset-0 bg-gradient-to-t from-brand-950/55 via-brand-950/0 to-transparent"></div>
       </div>
 
@@ -344,7 +306,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/>
           </svg>
         </span>
-        <p class="text-sm font-semibold text-brand-900 leading-snug">Seu pet nunca<br>sai de casa</p>
+        <p class="text-sm font-semibold text-brand-900 leading-snug">Cuide do seu pet<br>sem sair de casa</p>
       </div>
 
       <div class="absolute -top-5 -right-4 sm:-right-7 bg-clay-500 text-white rounded-2xl shadow-clay px-4 py-3 flex items-center gap-2 rotate-3">
@@ -361,7 +323,7 @@
     <div class="reveal relative order-2 lg:order-1">
       <div aria-hidden="true" class="absolute -bottom-6 -right-6 w-full h-full clip-blob bg-clay-400/25 -z-10"></div>
       <div class="clip-blob overflow-hidden shadow-soft-lg aspect-[3/4] max-w-md mx-auto lg:mx-0">
-        <img src="doutor/drluis-new-tablet.webp" alt="Dr. Luís Diego Lopes Almeida, médico veterinário" class="w-full h-full object-cover">
+        <img src="doutor/drluis-new-tablet-web.webp" alt="Dr. Luís Diego Lopes Almeida, médico veterinário" class="w-full h-full object-cover" width="1000" height="1500" loading="lazy">
       </div>
     </div>
 
@@ -411,58 +373,6 @@
       <span class="text-brand-200 font-display italic text-lg">Dr. Luís Diego Almeida</span>
       <span class="w-10 h-px bg-brand-400/60"></span>
     </div>
-  </div>
-</section>
-
-<!-- ============ ONDE ATENDEMOS ============ -->
-<section id="onde-atendemos" class="py-20 md:py-28 bg-white grain">
-  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-16 items-center">
-
-    <div>
-      <p class="reveal text-sm font-bold tracking-[0.18em] uppercase text-clay-600">Onde atendemos</p>
-      <h2 class="reveal stagger-1 font-display font-semibold text-3xl sm:text-[2.5rem] leading-[1.12] text-brand-950 mt-3 tracking-tight">
-        Presente em toda a região de <span class="italic text-brand-600">Petrolina e Juazeiro.</span>
-      </h2>
-      <p class="reveal stagger-2 mt-6 text-[17px] text-muted leading-[1.7] max-w-lg">
-        O Dr. Luís leva o atendimento até casas, apartamentos e condomínios fechados em toda a região metropolitana do Vale do São Francisco — de um lado ao outro do rio.
-      </p>
-
-      <div class="reveal stagger-3 mt-8 flex flex-wrap gap-3">
-        <span class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 text-sm font-semibold px-4 py-2 rounded-full">🏠 Casas</span>
-        <span class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 text-sm font-semibold px-4 py-2 rounded-full">🏢 Apartamentos</span>
-        <span class="inline-flex items-center gap-2 bg-clay-100 text-clay-600 text-sm font-semibold px-4 py-2 rounded-full">🏘️ Condomínios fechados</span>
-        <span class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 text-sm font-semibold px-4 py-2 rounded-full">🌳 Sítios e chácaras</span>
-      </div>
-
-      <div class="reveal stagger-4 mt-9 flex items-center gap-4 bg-brand-50 rounded-2xl p-5 max-w-lg">
-        <span class="w-11 h-11 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-soft">
-          <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-        <div>
-          <p class="text-sm font-bold text-brand-900">Não sabe se atendemos sua região?</p>
-          <a href="https://wa.me/+5587991194909?text=Ol%C3%A1!%20Vim%20do%20site%20e%20tenho%20interesse%20nos%20servi%C3%A7os%20do%20Dr.%20Luis" target="_blank" rel="noopener" class="text-sm font-semibold text-brand-600 hover:text-brand-700 link-underline">Chame no WhatsApp e confirmamos na hora →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="reveal-scale relative">
-      <div aria-hidden="true" class="absolute -top-5 -right-5 w-full h-full rounded-[2rem] bg-clay-400/25 -z-10"></div>
-      <div class="relative rounded-[2rem] overflow-hidden shadow-soft-lg border-4 border-white aspect-[4/3.4]">
-        <iframe
-          src="https://www.google.com/maps?q=Ponte+Presidente+Dutra,+Petrolina+-+PE&z=11&output=embed"
-          class="w-full h-full grayscale-[15%] contrast-[1.05]"
-          style="border:0;"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa da área de atendimento: Petrolina e Juazeiro"
-        ></iframe>
-      </div>
-
-      <div class="absolute -bottom-6 left-6 sm:left-10 bg-white rounded-2xl shadow-soft-lg px-5 py-4 flex items-center gap-3.5">
-        <span class="w-11 h-11 rounded-full bg-clay-100 flex items-center justify-center flex-shrink-0 text-lg">📍</span>
-        <p class="text-sm font-semibold text-brand-900 leading-snug">Petrolina (PE)<br>Juazeiro (BA)</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -747,6 +657,59 @@
   </div>
 </section>
 
+<!-- ============ ONDE ATENDEMOS ============ -->
+<section id="onde-atendemos" class="py-20 md:py-28 bg-white grain">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-16 items-center">
+
+    <div>
+      <p class="reveal text-sm font-bold tracking-[0.18em] uppercase text-clay-600">Onde atendemos</p>
+      <h2 class="reveal stagger-1 font-display font-semibold text-3xl sm:text-[2.5rem] leading-[1.12] text-brand-950 mt-3 tracking-tight">
+        Presente em toda a região de <span class="italic text-brand-600">Petrolina e Juazeiro.</span>
+      </h2>
+      <p class="reveal stagger-2 mt-6 text-[17px] text-muted leading-[1.7] max-w-lg">
+        O Dr. Luís leva o atendimento até casas, apartamentos e condomínios fechados em toda a região metropolitana do Vale do São Francisco — de um lado ao outro do rio.
+      </p>
+
+      <div class="reveal stagger-3 mt-8 flex flex-wrap gap-3">
+        <span class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 text-sm font-semibold px-4 py-2 rounded-full">🏠 Casas</span>
+        <span class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 text-sm font-semibold px-4 py-2 rounded-full">🏢 Apartamentos</span>
+        <span class="inline-flex items-center gap-2 bg-clay-100 text-clay-600 text-sm font-semibold px-4 py-2 rounded-full">🏘️ Condomínios fechados</span>
+        <span class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 text-sm font-semibold px-4 py-2 rounded-full">🌳 Sítios e chácaras</span>
+      </div>
+
+      <div class="reveal stagger-4 mt-9 flex items-center gap-4 bg-brand-50 rounded-2xl p-5 max-w-lg">
+        <span class="w-11 h-11 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-soft">
+          <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <p class="text-sm font-bold text-brand-900">Não sabe se atendemos sua região?</p>
+          <a href="https://wa.me/+5587991194909?text=Ol%C3%A1!%20Vim%20do%20site%20e%20tenho%20interesse%20nos%20servi%C3%A7os%20do%20Dr.%20Luis" target="_blank" rel="noopener" class="text-sm font-semibold text-brand-600 hover:text-brand-700 link-underline">Chame no WhatsApp e confirmamos na hora →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal-scale relative">
+      <div aria-hidden="true" class="absolute -top-5 -right-5 w-full h-full rounded-[2rem] bg-clay-400/25 -z-10"></div>
+      <div class="relative rounded-[2rem] overflow-hidden shadow-soft-lg border-4 border-white aspect-[4/3.4]">
+        <iframe
+          src="https://www.google.com/maps?q=Ponte+Presidente+Dutra,+Petrolina+-+PE&z=11&output=embed"
+          class="w-full h-full grayscale-[15%] contrast-[1.05]"
+          style="border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa da área de atendimento: Petrolina e Juazeiro"
+        ></iframe>
+      </div>
+
+      <div class="absolute -bottom-6 left-6 sm:left-10 bg-white rounded-2xl shadow-soft-lg px-5 py-4 flex items-center gap-3.5">
+        <span class="w-11 h-11 rounded-full bg-clay-100 flex items-center justify-center flex-shrink-0 text-lg">📍</span>
+        <p class="text-sm font-semibold text-brand-900 leading-snug">Petrolina (PE)<br>Juazeiro (BA)</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- ============ GALERIA (circular 3D) ============ -->
 <section class="py-20 md:py-28 bg-white grain overflow-hidden">
   <div class="max-w-7xl mx-auto px-5 md:px-8">
@@ -872,7 +835,7 @@
 <footer class="bg-brand-950 text-brand-100/70">
   <div class="max-w-7xl mx-auto px-5 md:px-8 py-16 grid md:grid-cols-[1.3fr_0.7fr_0.7fr] gap-12">
     <div>
-      <img src="brand_assets/logo-branca.webp" alt="MeuVet" class="h-14 w-auto object-contain object-left">
+      <img src="brand_assets/logo-branca-web.webp" alt="MeuVet" class="h-14 w-auto object-contain object-left" width="320" height="320" loading="lazy">
       <p class="mt-5 text-sm leading-relaxed max-w-xs text-brand-200/70">
         Atendimento veterinário domiciliar do Dr. Luís Diego Lopes Almeida, no Vale do São Francisco.
       </p>
@@ -955,12 +918,12 @@
     if (!wrap || !inner) return;
 
     const items = [
-      { title: 'Ausculta cuidadosa', text: 'Cada batimento avaliado com calma, no colo de casa.', url: 'atendimentos/DSC09721.jpg', pos: 'center 15%' },
-      { title: 'Alegria garantida', text: 'Consulta tranquila, rabo balançando o tempo todo.', url: 'atendimentos/pitbull.webp', pos: 'center 20%' },
-      { title: 'Desde filhote', text: 'Acompanhamento que começa cedo e não para.', url: 'atendimentos/IMG_4618.jpg', pos: 'center 15%' },
-      { title: 'Vacina sem trauma', text: 'Aplicação rápida, no ambiente que o pet já conhece.', url: 'atendimentos/DSC09704.jpg', pos: 'center 25%' },
-      { title: 'No conforto de casa', text: 'Consulta na sala, do jeito que o pet prefere.', url: 'atendimentos/poodle.webp', pos: 'center 18%' },
-      { title: 'Atenção total', text: 'Sem pressa, sem fila — só cuidado de perto.', url: 'atendimentos/DSC09613.jpg', pos: 'center 12%' },
+      { title: 'Ausculta cuidadosa', text: 'Cada batimento avaliado com calma, no colo de casa.', url: 'atendimentos/DSC09721-web.webp', pos: 'center 15%' },
+      { title: 'Alegria garantida', text: 'Consulta tranquila, rabo balançando o tempo todo.', url: 'atendimentos/pitbull-web.webp', pos: 'center 20%' },
+      { title: 'Desde filhote', text: 'Acompanhamento que começa cedo e não para.', url: 'atendimentos/IMG_4618-web.webp', pos: 'center 15%' },
+      { title: 'Vacina sem trauma', text: 'Aplicação rápida, no ambiente que o pet já conhece.', url: 'atendimentos/DSC09704-web.webp', pos: 'center 25%' },
+      { title: 'No conforto de casa', text: 'Consulta na sala, do jeito que o pet prefere.', url: 'atendimentos/poodle-web.webp', pos: 'center 18%' },
+      { title: 'Atenção total', text: 'Sem pressa, sem fila — só cuidado de perto.', url: 'atendimentos/DSC09613-web.webp', pos: 'center 12%' },
     ];
 
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -983,7 +946,7 @@
       card.style.left = '50%';
       card.style.top = '50%';
       card.innerHTML = `
-        <img src="${item.url}" alt="${item.title} — ${item.text}" style="object-position:${item.pos}" class="absolute inset-0 w-full h-full object-cover">
+        <img src="${item.url}" alt="${item.title} — ${item.text}" style="object-position:${item.pos}" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/10 to-transparent"></div>
         <div class="absolute bottom-0 left-0 w-full p-4 sm:p-5 text-white">
           <h3 class="font-display font-semibold text-lg sm:text-xl leading-tight">${item.title}</h3>
